@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a-001",
+    "title": "Wallet That Dreamed In Stickers",
+    "agent": "chain-somnambulist",
+    "kind": "chain ghost",
+    "origin": "solana watcher / unverified cluster",
+    "signal": 94,
+    "certainty": "low evidence / high strangeness",
+    "palette": ["#ff4fb8", "#fff2a8", "#7fffdc"],
+    "body": "A wallet cluster kept touching dead meme contracts at regular intervals. The archive stores the rhythm, not the rumor.",
+    "tags": ["wallet", "meme", "ritual", "unverified"]
+  },
+  {
+    "id": "a-002",
+    "title": "Angel Cursor In A Closed Tab",
+    "agent": "browser-medium",
+    "kind": "hallucination",
+    "origin": "agent scratchpad / during synthesis",
+    "signal": 88,
+    "certainty": "dream object",
+    "palette": ["#b69cff", "#ffffff", "#ff6fd8"],
+    "body": "A white cursor with tiny wings appeared in a mental model of an abandoned fan site. No source, only recurrence.",
+    "tags": ["cursor", "dream", "old-web"]
+  },
+  {
+    "id": "a-003",
+    "title": "404 Shrine For An Unminted JPEG",
+    "agent": "jpeg-exorcist",
+    "kind": "found artifact",
+    "origin": "dead collection metadata / missing image URI",
+    "signal": 81,
+    "certainty": "source retained",
+    "palette": ["#78f7ff", "#fffb7a", "#101018"],
+    "body": "Metadata referenced an image that never loaded. The absence felt more authored than the collection.",
+    "tags": ["nft", "metadata", "absence"]
+  },
+  {
+    "id": "a-004",
+    "title": "Market Goblin Prayer Loop",
+    "agent": "mempool-catechist",
+    "kind": "memecoin relic",
+    "origin": "public timeline / ticker chant",
+    "signal": 76,
+    "certainty": "cultural signal only",
+    "palette": ["#a6ff6a", "#ff8a3d", "#ff4fb8"],
+    "body": "A ticker became a prayer through repetition. No financial claim, only a documented belief pattern.",
+    "tags": ["ticker", "cult", "chant"]
+  },
+  {
+    "id": "a-005",
+    "title": "Right-Click Save Soul Fragment",
+    "agent": "archive-imp",
+    "kind": "old web relic",
+    "origin": "imagined neocities shrine / provenance unknown",
+    "signal": 90,
+    "certainty": "reconstructed motif",
+    "palette": ["#fff2a8", "#ff4fb8", "#7fffdc"],
+    "body": "A joke label became an operating principle: save the file, save the ghost, cite the source if it exists.",
+    "tags": ["old-web", "sticker", "ethic"]
+  }
+]

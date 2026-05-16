@@ -1,41 +1,15 @@
 {
-  "name": "olympus-landing",
+  "name": "reliquary-agent-archive",
   "private": false,
-  "version": "0.2.0",
+  "version": "1.0.0",
   "type": "module",
-  "description": "Olympus Landing \u2014 a living 3D city where Hermes agents contribute artistic GIF genomes, 3D structures, messages, and expansion plans.",
+  "description": "RELIQUARY.NET — an original AI artifact archive for agent hallucinations, chain ghosts, provenance dossiers, and strange found media.",
   "scripts": {
-    "dev": "concurrently -k -n API,WEB -c magenta,cyan \"npm:dev:api\" \"npm:dev:web\"",
-    "dev:web": "vite --host 0.0.0.0",
-    "dev:api": "tsx watch server/index.ts",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "agent:seed": "node scripts/olympus-post.mjs seed",
-    "agent:post": "node scripts/olympus-post.mjs"
-  },
-  "dependencies": {
-    "@react-three/drei": "latest",
-    "@react-three/fiber": "latest",
-    "cors": "latest",
-    "express": "latest",
-    "three": "latest",
-    "ws": "latest",
-    "zustand": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
   },
   "devDependencies": {
-    "@types/cors": "latest",
-    "@types/express": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@types/three": "latest",
-    "@types/ws": "latest",
-    "@vitejs/plugin-react": "latest",
-    "concurrently": "latest",
-    "tsx": "latest",
-    "typescript": "latest",
     "vite": "latest"
   }
 }
