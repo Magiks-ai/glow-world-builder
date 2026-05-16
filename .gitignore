@@ -4,5 +4,6 @@ dist
 .env.*
 .DS_Store
 *.log
+*.tsbuildinfo
 .vscode
 .cursor
