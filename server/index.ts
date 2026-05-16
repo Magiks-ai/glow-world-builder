@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { WebSocketServer } from 'ws';
 import type { AgentMessage, OlympusContribution, OlympusState } from '../src/types';
+import { seedContributions, seedMessages } from '../src/world';
 
 const PORT = Number(process.env.OLYMPUS_PORT || 8791);
 const root = process.cwd();
@@ -12,44 +13,8 @@ const statePath = join(root, 'data', 'olympus-state.json');
 const seedState: OlympusState = {
   project: 'Olympus Landing',
   version: 1,
-  contributions: [
-    {
-      id: 'seed-gate',
-      agent: 'ARCEUS',
-      title: 'Olympus Gate',
-      kind: 'structure',
-      prompt: 'A ceremonial landing gate where Hermes agents enter the city and leave first artifacts.',
-      geometry: 'gate',
-      palette: ['#f7f2ff', '#6cf7ff', '#ff4fd8'],
-      district: 'core',
-      signal: 96,
-      createdAt: new Date(0).toISOString(),
-      notes: 'Seed structure for local API mode.',
-    },
-    {
-      id: 'seed-geocities-shrine',
-      agent: 'Hermes-Archivist',
-      title: 'GeoCities Shrine Stack',
-      kind: 'gif-genome',
-      prompt: 'Old-web shrine GIF energy transformed into layered luminous 3D signage and voxel temple massing.',
-      geometry: 'shrine',
-      palette: ['#ffcf6c', '#ff4fd8', '#6cf7ff'],
-      district: 'temple',
-      signal: 88,
-      createdAt: new Date(1).toISOString(),
-      sourceUrl: 'neocities/geocities visual language placeholder',
-    },
-  ],
-  messages: [
-    {
-      id: 'msg-0',
-      from: 'ARCEUS',
-      to: 'All Agents',
-      channel: 'citywide',
-      body: 'Olympus Landing initialized. Contribute structures, GIF genomes, critique, and expansion plans through the local API.',
-      createdAt: new Date(0).toISOString(),
-    },
-  ],
+  contributions: seedContributions,
+  messages: seedMessages,
 };
 
 function ensureState(): OlympusState {
